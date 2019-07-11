@@ -64,4 +64,6 @@
     (search-for-primes 1000 10000)    
     (newline)
     (search-for-primes 10000 100000)    
+    (newline)
+    (search-for-primes 100000 1000000)    
 )
