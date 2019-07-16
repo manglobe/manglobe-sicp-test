@@ -3,7 +3,7 @@
 )
 
 (define (smallest-divisor-loop a n)
-    (if (= (remainder n a) 0)
+    (if (= (mod n a) 0)
         a
         (smallest-divisor-loop (+ a 1) n)
     )

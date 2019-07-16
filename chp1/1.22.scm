@@ -9,7 +9,7 @@
     )
 )
 (define (divides? a b)
-    (= (remainder b a) 0)
+    (= (mod b a) 0)
 )
 (define (prime? n)
      (= n (smallest-divisor n))
