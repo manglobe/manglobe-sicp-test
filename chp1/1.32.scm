@@ -19,7 +19,7 @@
     (if (> a b)
         null-value
         (combiner (term a)
-            (accumulate term (next a) next b)
+            (accumulate combiner null-value term  (next a) next b)
         )
     )
 )
