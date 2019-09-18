@@ -4,7 +4,7 @@
             result
             (iter (next a) 
                 (+ (term a)
-                (sum term (next a) next b)
+                    result
                 )
             )
         )
