@@ -1,0 +1,18 @@
+(load "1.37.scm")
+(define (get-n x)
+    (define (n i)
+        (if (= i 1)
+            x
+            (- (* x x))
+        )
+    )
+    n
+)
+(define (d i)
+   (- (* 2 i) 1)
+)
+(define (tan-cf x k)
+    (cont-frac (get-n x) d k)
+)
+(define (main)
+  (tan-cf 0.5 100))
