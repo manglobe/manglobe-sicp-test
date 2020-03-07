@@ -32,3 +32,5 @@
         (display ((preset-interval r1 r2) part2))   
     )
 )
+; this way just works when func is single 
+; e.g (r=> r^2  (-1, 1)) should be (0, 1) not (-1^2, 1^2)
