@@ -5,6 +5,8 @@
     (if (null? list)
         relist
         (reverse-core (cdr list) (cons  (car list) relist))
+        ;;; copy 
+        ; (cons (car list) (reverse-core (cdr list) relist))
     ) 
 )
 
