@@ -4,10 +4,7 @@
         (lambda (x y) 
             (+  x 
                 (* n 
-                    (if (null? (cdr list))
-                        0
-                        (horner-eval n (cdr list) )
-                    )
+                   y
                 )
             )
         ) 
