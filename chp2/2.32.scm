@@ -5,11 +5,7 @@
             (append rest 
                 (map
                     (lambda (sub-s) 
-                        (cond
-                            ((null? sub-s) (list (car s)))
-                            ((pair? sub-s) (cons (car s) sub-s))
-                            (else list sub-s (car s))
-                        )
+                        (cons (car s) sub-s)
                     ) 
                     rest
                 )
