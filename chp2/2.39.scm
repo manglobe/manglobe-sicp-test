@@ -1,0 +1,16 @@
+(load "2.38.scm")
+(define (reverse-left sequence)
+    (fold-left (lambda (x y) (cons y x)) '() sequence)
+)
+(define (reverse-right sequence)
+    (fold-right (lambda (x y) (append y (list x))) '() sequence)
+)
+
+
+(define (main)
+    (display "left:")
+    (display (reverse-left '(1 2 3 4 5)))
+    (newline)
+    (display "right:")
+    (display (reverse-right '(1 2 3 4 5)))
+)
