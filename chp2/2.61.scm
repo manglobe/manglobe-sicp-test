@@ -1,0 +1,16 @@
+(define (adjoin-set x set)
+    (if (null? set) 
+        (list x)
+        (let ([prev (car set)] [next (cdr set)])
+            (cond
+                ((= x prev) set)
+                ((< x prev) (cons x set))
+                ((> x prev) (cons prev (adjoin-set x next)))
+            )
+        )
+    )
+)
+
+(define (main)
+    (adjoin-set 5 '(1 2 3 4 6 7 8 9))
+)
